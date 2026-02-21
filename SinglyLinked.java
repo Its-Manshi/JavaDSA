@@ -1,3 +1,4 @@
+// Linked list implementation
 import java.util.Scanner;
 
 class Node {
