@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class BubbleSort {
-    public void sorti(int[] arr, int n) {
+    public void sort(int[] arr, int n) {
         for (int i = 0; i < n - 1; i++) {
             for (int j = 0; j < n - i - 1; j++) {
                 if (arr[j] < arr[j + 1]) {
@@ -30,7 +30,7 @@ public class BubbleSort {
             arr[i] = sc.nextInt();
         }
         System.out.println("The sorted list");
-        bs.sorti(arr, n);
+        bs.sort(arr, n);
         bs.printArray(arr, n);
 
     }

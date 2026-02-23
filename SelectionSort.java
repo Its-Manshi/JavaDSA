@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class SelectionSort {
-        public void sorti(int [] arr, int n){
+        public void sort(int [] arr, int n){
         for (int i =0 ; i<n-1;i++){
             int smallest = i;
-            for(int j = i+1; j<n-1;j++){
+            for(int j = i+1; j<n;j++){
                 if(arr[j]<arr[smallest]){
                 smallest = j;
                 }
@@ -34,7 +34,7 @@ public class SelectionSort {
         for(int i = 0; i<n;i++){
             arr[i] = sc.nextInt();
         }
-        ss.sorti(arr, n);
+        ss.sort(arr, n);
         ss.printArray(arr, n);
     }
 }
